@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 
-class ProductCategoryRow extends Component {
-  render() {
-    const category = this.props.category;
+function ProductCategoryRow(props) {
+  const category = props.category;
 
-    return (
-      <tr>
-        <th>{category}</th>
-      </tr>
-    );
-  }
+  return (
+    <tr>
+      <th>{category}</th>
+    </tr>
+  );
 }
 
 export default ProductCategoryRow;

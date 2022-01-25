@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import FilterableProductTable from "./FilterableProductTable";
 
 const PRODUCTS = [
@@ -41,7 +41,7 @@ const PRODUCTS = [
 ];
 
 function App() {
-  const products = PRODUCTS;
+  const [products, setProducts] = useState(PRODUCTS);
 
   return <FilterableProductTable products={products} />;
 }
